@@ -12,8 +12,8 @@
 - `target_train.csv` - нерегулярные лабораторные замеры целевого показателя;
 - `data_test_small.csv`, `target_test_small.csv` - отложенный тестовый период.
 
-CSV не хранятся в репозитории из-за размера. Положите их в `lab2/data/` или укажите
-каталог через переменную окружения `LAB2_DATA_DIR`.
+CSV не хранятся в репозитории из-за размера. Положите четыре файла прямо в `lab2/`
+рядом с ноутбуком (файлы уже добавлены локально, но исключены из Git).
 
 ### Запуск
 
@@ -22,11 +22,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-# вариант 1: данные в lab2/data/
 jupyter notebook lab2_virtual_sensor.ipynb
-
-# вариант 2: данные в другом каталоге
-LAB2_DATA_DIR=/path/to/data jupyter notebook lab2_virtual_sensor.ipynb
 ```
 
 Ноутбук уже выполнен, все графики и метрики сохранены в выходах ячеек.
